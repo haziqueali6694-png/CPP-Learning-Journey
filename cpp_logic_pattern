@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n; // User se total rows lene ke liye variable
+    
+    cout << "Enter the value: ";
+    cin >> n;
+
+    int i = 1; // Row counter ko 1 se start kiya
+
+    // Outer loop: Rows ko control karta hai
+    while (i <= n) {
+        
+        int j = n; // Har row n se start hogi (e.g., 4 se)
+
+        // Inner loop: Columns mein numbers print karta hai
+        while (j >= i) {
+            cout << j << " ";
+            j--; // Column value decrease ho rahi hai
+        }
+
+        cout << endl; // Row khatam hone par nayi line
+        i++; // Agli row par jaane ke liye increment
+    }
+
+    return 0;
+}
